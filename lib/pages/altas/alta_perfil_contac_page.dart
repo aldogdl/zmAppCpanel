@@ -475,7 +475,7 @@ class _AltaPerfilContacPageState extends State<AltaPerfilContacPage> {
     String tokenAsesor =  Provider.of<DataShared>(this._context, listen: false).tokenAsesor['token'];
     Map<String, dynamic> result = await emUser.getDatosUserByFile(altaUserSngt.userId, altaUserSngt.usname, tokenAsesor);
     tokenAsesor = null;
-
+    print(result);
     if(result['body'] != null){
       Map<String, dynamic> dataUser = new Map<String, dynamic>.from(result['body']);
       result = null;

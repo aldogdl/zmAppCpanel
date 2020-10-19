@@ -17,6 +17,7 @@ import 'package:zmcpanel/pages/altas/lista_users_page.dart';
 
 import 'package:zmcpanel/pages/init_config/init_config_page.dart';
 import 'package:zmcpanel/pages/login/login_asesor_page.dart';
+import 'package:zmcpanel/pages/login/registro_user_page.dart';
 
 class Rutas {
 
@@ -25,7 +26,7 @@ class Rutas {
     return {
       'init_config_page'       : (context) => InitConfigPage(),
       'login_asesor_page'      : (context) => LoginAsesorPage(),
-
+      'reg_user_page'          : (context) => RegistroUserPage(),
       'alta_index_menu_page'   : (context) => AltaIndexMenuPage(),
       'alta_lst_users_page'    : (context) => ListaUsersPage(),
       'alta_sistema_page'      : (context) => AltaSistemaPage(),
